@@ -1,0 +1,35 @@
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedelmäpeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hedelmäpeli</h1>
+    <div class="ohjaukset">
+        <h3>Rahaa: <span id="raha">50</span>€</h3>
+        <h3>Panos: <span id="panos"></span>€</h3>
+        <div id="viesti"></div>
+        <div id="panokset">
+            <button id="panos1">1€</button>
+            <button id="panos2">2€</button>
+            <button id="panos3">3€</button>
+        </div>
+        <button onclick="pelaa()">Pelaa</button>
+    </div>
+
+    <div class="kone">
+        <div class="rulla" id="rulla1">🍎</div>
+        <button class="lock-button" data-id="rulla1">Lukitse</button>
+        <div class="rulla" id="rulla2">🍉</div>
+        <button class="lock-button" data-id="rulla2">Lukitse</button>
+        <div class="rulla" id="rulla3">🍐</div>
+        <button class="lock-button" data-id="rulla3">Lukitse</button>
+        <div class="rulla" id="rulla4">🍒</div>
+        <button class="lock-button" data-id="rulla4">Lukitse</button>
+    </div>
+
+    <script src="index.js"></script> 
+</body>
+</html>

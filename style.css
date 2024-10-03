@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+}
+
+.ohjaukset{
+   text-align: center;
+}
+
+
+.kone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.rulla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid #9f9797;
+    font-size: 24px;
+    background-color: #f9f9f9;
+}

@@ -129,3 +129,21 @@ function lukitsePainikkeet(tila) {
         button.disabled = tila; 
     });
 }
+
+document.getElementById('tarkistaBtn').addEventListener('click', huijausMenu);
+
+function huijausMenu() {
+    const annettuSalasana = document.getElementById('salasana').value;
+    const oikeaSalasana = "1234";
+
+    if (annettuSalasana === oikeaSalasana) {
+        const buttonContainer = document.getElementById('buttonContainer');
+        const uusiNappi1 = document.createElement('button');
+        uusiNappi1.textContent = "Lisää rahaa";
+        uusiNappi1.onclick = function() {
+            raha += 100000;
+            paivitaRaha()
+        };
+        buttonContainer.appendChild(uusiNappi1);
+    }
+}
